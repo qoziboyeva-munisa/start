@@ -4,500 +4,685 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>imtixon</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="container navbar__container">
-            <img class="nav__img" src="./img/startapp.png" alt="startapp">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" id="bizhaqimizda" class="nav__link">Biz haqimizda</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" id="xizmatlar" class="nav__link">Xizmatlar</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" id="mijozlar" class="nav__link">Mijozlar</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" id="proektlar" class="nav__link">Proektlar</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" id="jamoa" class="nav__link">Jamoa</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" id="aloqa" class="nav__link">Aloqa</a>
-                </li>
-                <button id="bizboglanish" class="nav__btn">Biz bilan bog'lanish</button>
-            </ul>
-        </div>
-    </div>
-    <!-- ------------------------------------------header------------------------------- -->
-
-    <div class="header">
-        <div class="container header__container">
-          <div class="header__wrapper">
-            <div class="header__boxone">
-                <button type="submit" class="btn" onclick="changeLanguage('uzb')">uzb</button>
-                <button type="submit" class="btn" onclick="changeLanguage('rus')">rus</button>
-                <button type="submit" class="btn" onclick="changeLanguage('eng')">eng</button>
-                <h1 class="header__title" id="headertitle">Sizning <span class="header__span1">g'oyangizni</span> rivojlantirish uchun mukammal <span class="header__span2">'IT'</span> yechimlar</h1>
-                <p class="header__text" id="headertext">Proektingizni 10-yildan ortiq tajribaga ega mutaxasislargaishoning va qisqa muddatda yuqori muvofaqqiyatlarga erishing </p>
-                <button class="header__btn" id="heaaderbtn">Hoziroq aloqaga chiqish</button>
-            </div>
-            <div class="header__boxtoo">
-                <ul class="header__list">
-                    <li class="header__itemone">
-                        <img src="./img/1chi.jpg" alt="1chi" class="header__imgone">
-                        <img src="./img/2chi.jpg" alt="2chi" class="header__imgtoo">
-                        <img src="./img/3chi.jpg" alt="3chi" class="header__imgthree">
+    <div class="content">
+        <div class="navbar">
+            <div class="container navbar__container">
+                <img class="nav__img" src="./img/startapp.png" alt="startapp">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#haqimizda" id="bizhaqimizda" class="nav__link">Biz haqimizda</a>
                     </li>
-                    <li class="header__itemtoo">
-                        <img class="header__imgfour" src="./img/2.1.jpg" alt="cv">
-                        <img src="./img/2.2.jpg" alt="ejkdjke" class="header__imgfive">
-                        <img src="./img/2.3.jpg" alt="menf" class="header__imgsix">
+                    <li class="nav__item">
+                        <a href="#xizmatlari" id="xizmatlar" class="nav__link">Xizmatlar</a>
                     </li>
-                    <li class="header__itemthree">
-                        <img src="./img/3.1.jpg" alt="dbkds" class="header__imgseven">
-                        <img src="./img/3.2.jpg" alt="" class="header__imgeight">
+                    <li class="nav__item">
+                        <a href="#mijozlari" id="mijozlar" class="nav__link">Mijozlar</a>
                     </li>
-                </ul>
-            </div>
-          </div>
-            <div class="header__boxthre">
-                <img src="./img/startapp.png" alt="" class="header__imgbox">
-                <h1 class="header__title__name" id="htitname">Shu paytgacha bizga ishonch bildirgan va muvofaqqiyatli topshirganlar soni</h1>
-                <ul class="header__list__name">
-                    <li class="header__item__name">
-                        <h2 class="header__titleson" >500+</h2>
-                        <p class="header__text__name" id="heatexname">Topshirilgan ishlar</p>
+                    <li class="nav__item">
+                        <a href="#proektlari" id="proektlar" class="nav__link">Proektlar</a>
                     </li>
-                    <li class="header__item__name">
-                        <h2 class="header__titleson">20+</h2>
-                        <p class="header__text__name" id="headertextname">Mijozlar</p>
+                    <li class="nav__item">
+                        <a href="#jamoalari" id="jamoa" class="nav__link">Jamoa</a>
                     </li>
+                    <li class="nav__item">
+                        <a href="#aloqalari" id="aloqa" class="nav__link">Aloqa</a>
+                    </li>
+                    <a href="#aloqalari">
+                    <button id="bizboglanish" class="nav__btn">Biz bilan bog'lanish</button>
+                </a>
+                    <div class="nav__language">
+                        <button type="submit" class="btn" onclick="changeLanguage('uzb')">uz</button>
+                        <button type="submit" class="btn" onclick="changeLanguage('rus')">ru</button>
+                        <button type="submit" class="btn" onclick="changeLanguage('eng')">en</button>
+                    </div>
                 </ul>
             </div>
         </div>
-    </div>
-    <!-- -------------------------------hero------------------ -->
-    <div class="hero">
-        <div class="container hero__container">
-            <ul class="hero__list">
-                <li class="hero__item">
-                   <a class="hero__link" href="#"> <img class="hero__islam" src="./img/islom.png" alt="islam">
-                    <p class="hero__test" id="islam">islam.uz</p></a>
-                </li>
-                <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__fudbol" src="./img/fudbol.png" alt="fudbol">
-                     <p class="hero__test" id="fudbol">O'zbekiston fudbol assatsiatsiyasi</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__grand" src="./img/grand.png" alt="grand">
-                     <p class="hero__test" id="grand">Grand Ta'lim Maktabi</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__yangiasr" src="./img/yangi asr.png" alt="yangi asr">
-                     <p class="hero__test" id="asr">Yangi Asr Uneversitet</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__almoz" src="./img/almoz.png" alt="almoz">
-                     <p class="hero__test" id="almoz">Almoz english language centre</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__bukhara" src="./img/Bukhara.png" alt="bakhara">
-                     <p class="hero__test" id="bukhara">Bukhara Education</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__safo" src="./img/safo.png" alt="safo">
-                     <p class="hero__test" id="safo">Safo Ta'lim O'quv markazi</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__zamon" src="./img/zamon.png" alt="zamon">
-                     <p class="hero__test" id="zamon">Zamon akademiyasi</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__alcomfort" src="./img/alcomfort.png" alt="alcomfort">
-                     <p class="hero__test" id="alcomfort">Allcomfort</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__hadiyev" src="./img/hodiyev.png" alt="dsfkj">
-                     <p class="hero__test" id="hodiyev">Hodiyev Education</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__boyyina" src="./img/boyyina.png" alt="boyyina">
-                     <p class="hero__test" id="boyyina">Boyyina</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__muslimat" src="./img/muslimat.png" alt="sdnls">
-                     <p class="hero__test" id="muslimat">Musimaat.uz</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__oila" src="./img/oila marlket.png" alt="sndl">
-                     <p class="hero__test" id="oila">Oila market</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__vitainfo" src="./img/vitainfo.png" alt="vitainfo">
-                     <p class="hero__test" id="vitainfo">Vitainfo.uz</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__iqtisodiyot" src="./img/iqtisodiyot.png" alt="iqtisodiyot">
-                     <p class="hero__test" id="iqtisodiyot">Iqtisodiyot uneversiteti</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__tibomet" src="./img/tibomet.png" alt="tibomet">
-                     <p class="hero__test" id="tibomet">TIBOMET QORA SEDANA YOG'I</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__navoiy" src="./img/navoiy.png" alt="navoiy">
-                     <p class="hero__test" id="navoiy">Navoiy innavatsiyalar Institti</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__uzs" src="./img/uzscool.png" alt="uzs">
-                     <p class="hero__test" id="uzs">Uzscool Education</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__inon" src="./img/inon.png" alt="inon">
-                     <p class="hero__test" id="inon">inon.uz</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__evr" src="./img/EVR.png" alt="evr">
-                     <p class="hero__test" id="evg">EVR consulting</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__xandoq" src="./img/handoq.png" alt="xandoq">
-                     <p class="hero__test" id="xandaq">Xandaq Treval</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__primear" src="./img/premier.png" alt="primear">
-                     <p class="hero__test" id="premiar">Premier hotel</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__oxus" src="./img/oxus.png" alt="oxus">
-                     <p class="hero__test" id="oxus">Oxus Universiteti</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__salam" src="./img/salam.png" alt="salam">
-                     <p class="hero__test" id="salam">Salam Treval</p></a>
-                 </li>
-                 <li class="hero__item">
-                    <a class="hero__link" href="#"> <img class="hero__miramandi" src="./img/mirama.png" alt="mirama">
-                     <p class="hero__test" id="miraman">Miramandi restaurand</p></a>
-                 </li>
-            </ul>
-        </div>
-    </div>
-    <!-- -----------------------------main----------------------- -->
-    <div class="main">
-        <div class="container main__container">
-            <p class="main__text" id="proekt">PROECTLARIMIZ </p>
-            <h1 class="main__title" id="ishlar">Qilgan ishlarimiz</h1>
-            <ul class="main__list">
-                <li class="main__item">
-                   <p class="main__text" id="filter" >FILTER:</p>
-                </li>
-                <li class="main__item">
-                    <a href="#" class="main__link" id="all">ALL</a>
-                </li>
-                <li class="main__item">
-                    <a href="#" class="main__link" id="websayt">WEB SAYT </a>
-                    <img src="" alt="">
-                </li>
-                <li class="main__item">
-                    <a href="#" class="main__link" id="telegram">TELEGRAM BOT</a>
-                </li>
-                <li class="main__item">
-                    <a href="#" class="main__link" id="mobil">MOBIL ILOVALAR</a>
-                </li>
-                <li class="main__item">
-                    <a href="#" class="main__link" id="decktop">DESCTOP ILOVALAR</a>
-                </li>
-                <li class="main__item">
-                    <a href="#" class="main__link" id="grafik">GRAFIK DIZAYN</a>
-                </li>
-                
 
-            </ul>
-            <ul class="main__list__name">
-                <li class="main__item__name">
-                    <img src="./img/1.png" alt="edf" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/2.png" alt="df" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/3.png" alt="sd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/4.png" alt="sd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/5.png" alt="sd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/6.png" alt="asd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/7.png" alt="asd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/8.png" alt="asd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/9.png" alt="s" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/10.png" alt="sd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/11.png" alt="qsd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/12.png" alt="sd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/13.png" alt="qwsd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/14.png" alt="qwd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/15.png" alt="asd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/16.png" alt="qswd" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/17.jpeg" alt="qsdqas" class="main__img">
-                </li>
-                <li class="main__item__name">
-                    <img src="./img/18.png" alt="qsd" class="main__img">
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <!-- ----------------------------------------pricing--------------------------- -->
-      <div class="pricing">
-        <div class="container pricing__container">
-            <h1 class="pricing__title">5-xil</h1>
-            <p class="pricing__text">Turdagi xizmat turlarimiz mavjud bular:</p>
-            <div class="pricing__box">
-                <img src="./img/box1.png" alt="jdsfjkds" class="pricing__imgone">
-                <img src="./img/box2.png" alt="nd " class="pricing__imgtoo">
-                <div class="pricing__inside">
-                    <h2 class="pricing__title__name">Websaytlar</h2>
-                    <div class="inside__boxone">
-                        <p class="inside__text">Landing page marketing va boshqa maqsadlar uchun</p>
-                        <p class="inside__text">Ta'lim platformalari to'lov tizimlarini o'z ichiga olgan ta'lim platformasi</p>
-                    </div>
-                    <div class="inside__boxtoo">
-                        <p class="inside__text">internet magazinlar + to'lov tizimlar</p>
-                        <p class="inside__text">Web dasturlar, CRM, LMS tizimlar</p>
-                    </div>
-                    <button class="pricing__btnone">Ko'rish uchun bosing</button>
-                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal" id="modal">
+            <button type="button" class="modal__btn">X</button>
+            <ul class="modal__list">
+                <li class="modal__item">
+                    <a href="#" class="modal__link">Home</a>
+                </li>
+                <li class="modal__item">
+                    <a href="#" class="modal__link">Skills</a>
+                </li>
+                <li class="modal__item">
+                    <a href="#" class="modal__link">About Us</a>
+                </li>
+                <li class="modal__item"> 
+                    <a href="#" class="modal__link">Pricing</a>
+                </li>
+                <li class="modal__item">
+                    <a href="#" class="modal__link">Contacts</a>
+                </li>
+            </ul>
+             
+            
             </div>
-            <div class="pricing__box">
-                <img src="./img/box3.png" alt="jdsfjkds" class="pricing__imgone">
-                <img src="./img/box4.jpeg" alt="nd " class="pricing__imgtoo">
-                <div class="pricing__inside">
-                    <h2 class="pricing__title__name">Mobile ilovalar</h2>
-                    <div class="inside__boxone">
-                        <p class="inside__text">Android</p>
-                        <p class="inside__text">los</p>
-                    </div>
-                    <button class="pricing__btntoo">Ko'rish uchun bosing</button>
+        </div>
+        <!-- ------------------------------------------header------------------------------- -->
+    
+        <div id="haqimizda" class="header">
+            <div class="container header__container">
+              <div class="header__wrapper">
+                <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"class="header__boxone">
+                    <!-- <button type="submit" class="btn" onclick="changeLanguage('uzb')">uzb</button>
+                    <button type="submit" class="btn" onclick="changeLanguage('rus')">rus</button>
+                    <button type="submit" class="btn" onclick="changeLanguage('eng')">eng</button> -->
+                    <h1 class="header__title" id="headertitle">Sizning <span class="header__span1">g'oyangizni</span> rivojlantirish uchun mukammal <span class="header__span2">'IT'</span> yechimlar</h1>
+                    <p class="header__text" id="headertext">Proektingizni 10-yildan ortiq tajribaga ega mutaxasislargaishoning va qisqa muddatda yuqori muvofaqqiyatlarga erishing </p>
+                    <a href="#aloqalari"><button class="header__btn" id="headerbtn">Hoziroq aloqaga chiqish</button></a>
                 </div>
-            </div>
-            <div class="pricing__box">
-                <img src="./img/box5.jpeg" alt="jdsfjkds" class="pricing__imgone">
-                <img src="./img/box6.jpeg" alt="nd " class="pricing__imgtoo">
-                <div class="pricing__inside">
-                    <h2 class="pricing__title__name">Decktop ilovalar</h2>
-                    <div class="inside__boxone">
-                        <p class="inside__text">Windows</p>
-                        <p class="inside__text">MacOs</p>
-                    </div>
-                    <div class="inside__boxtoo">
-                        <p class="inside__text">Linux</p>
-                         </div>
-                    <button class="pricing__btnthree">Ko'rish uchun bosing</button>
+                <div data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500" class="header__boxtoo">
+                    <ul class="header__list">
+                        <li class="header__itemone">
+                            <img src="./img/1chi.jpg" alt="1chi" class="header__imgone">
+                            <img src="./img/2chi.jpg" alt="2chi" class="header__imgtoo">
+                            <img src="./img/3chi.jpg" alt="3chi" class="header__imgthree">
+                        </li>
+                        <li class="header__itemtoo">
+                            <img class="header__imgfour" src="./img/2.1.jpg" alt="cv">
+                            <img src="./img/2.2.jpg" alt="ejkdjke" class="header__imgfive">
+                            <img src="./img/2.3.jpg" alt="menf" class="header__imgsix">
+                        </li>
+                        <li class="header__itemthree">
+                            <img src="./img/3.1.jpg" alt="dbkds" class="header__imgseven">
+                            <img src="./img/3.2.jpg" alt="" class="header__imgeight">
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="pricing__box">
-                <img src="./img/box7.jpeg" alt="jdsfjkds" class="pricing__imgone">
-                <img src="./img/box8.jpeg" alt="nd " class="pricing__imgtoo">
-                <div class="pricing__inside">
-                    <h2 class="pricing__title__name">Telegram botlar</h2>
-                    <div class="inside__boxone">
-                        <p class="inside__text">To'lov tizimlarini o'z ichiga olgan botlar</p>
-                        <p class="inside__text">Barcha murakkablikdagi botlar</p>
-                    </div>
-                    <div class="inside__boxtoo">
-                        <p class="inside__text">Dostavka va turli loyihalar uchun botlar</p>
-                        <p class="inside__text">Saytni botga intergratsiya qilish</p>
-                    </div>
-                    <button class="pricing__btnfour">Ko'rish uchun bosing</button>
-                </div>
-            </div>
-            <div class="pricing__box">
-                <img src="./img/box9.jpeg" alt="jdsfjkds" class="pricing__imgone">
-                <img src="./img/box10.jpeg" alt="nd " class="pricing__imgtoo">
-                <div class="pricing__inside">
-                    <h2 class="pricing__title__name">Grafik dizayn</h2>
-                    <div class="inside__boxone">
-                        <p class="inside__text">SMM postlar</p>
-                        <p class="inside__text">Brending & Logotip</p>
-                    </div>
-                    <div class="inside__boxtoo">
-                        <p class="inside__text">Youtube video bannerlar</p>
-                        <p class="inside__text">Reklama bannerlari</p>
-                    </div>
-                    <button class="pricing__btnfive">Ko'rish uchun bosing</button>
+              </div>
+                <div id="mijozlari" data-aos="fade-up" class="header__boxthre">
+                    <img src="./img/startapp.png" alt="" class="header__imgbox">
+                    <h1 class="header__title__name" id="htitname">Shu paytgacha bizga ishonch bildirgan va muvofaqqiyatli topshirganlar soni</h1>
+                    <ul  class="header__list__name">
+                        <li class="header__item__name">
+                            <h2 class="header__titleson" >500+</h2>
+                            <p class="header__text__name" id="heatexname">Topshirilgan ishlar</p>
+                        </li>
+                        <li class="header__item__name">
+                            <h2 class="header__titleson">20+</h2>
+                            <p class="header__text__name" id="headertextname">Mijozlar</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-      </div>
-      <!-- ----------------------------------column------------------------ -->
-      <div class="column">
-        <div class="container column__container">
-            <img src="./img/telefon.png" alt="sajdkbsj" class="column__img">
-            <div class="column__box">
-                <p class="column__text">RESPONSIVE</p>
-                <h1 class="column__title">Har qanday ekran o'lchamiga mos keluvchi web dasturlar</h1>
-                <p class="column__text__name">Startapp sizning web saytingiz yoki mobil ilovangiz barcha qurilmalar birdek ishlashini taminlaydi</p>
-                <img class="column__img-name" src="./img/qrcod.jpg" alt="jdfnk">
+        <!-- -------------------------------hero------------------ -->
+        <div class="hero">
+            <div class="container hero__container">
+                <ul class="hero__list">
+                    <li data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" class="hero__item">
+                       <a class="hero__link" href="https://islom.uz/"> <img class="hero__islam" src="./img/islom.png" alt="islam">
+                        <p class="hero__test" id="islam">islam.uz</p></a>
+                    </li>
+                    <li data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#haqimizda"> <img class="hero__fudbol" src="./img/fudbol.png" alt="fudbol">
+                         <p class="hero__test" id="fudbol">O'zbekiston fudbol assatsiatsiyasi</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://grandmaktab.uz/"> <img class="hero__grand" src="./img/grand.png" alt="grand">
+                         <p class="hero__test" id="grand">Grand Ta'lim Maktabi</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://yangiasr.uz/"> <img class="hero__yangiasr" src="./img/yangi asr.png" alt="yangi asr">
+                         <p class="hero__test" id="asr">Yangi Asr Uneversitet</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#haqimizda"> <img class="hero__almoz" src="./img/almoz.png" alt="almoz">
+                         <p class="hero__test" id="almoz">Almoz english language centre</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://bukharaedu.uz/"> <img class="hero__bukhara" src="./img/Bukhara.png" alt="bakhara">
+                         <p class="hero__test" id="bukhara">Bukhara Education</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__safo" src="./img/safo.png" alt="safo">
+                         <p class="hero__test" id="safo">Safo Ta'lim O'quv markazi</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__zamon" src="./img/zamon.png" alt="zamon">
+                         <p class="hero__test" id="zamon">Zamon akademiyasi</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__alcomfort" src="./img/alcomfort.png" alt="alcomfort">
+                         <p class="hero__test" id="alcomfort">Allcomfort</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__hadiyev" src="./img/hodiyev.png" alt="dsfkj">
+                         <p class="hero__test" id="hodiyev">Hodiyev Education</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__boyyina" src="./img/boyyina.png" alt="boyyina">
+                         <p class="hero__test" id="boyyina">Boyyina</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://muslimaat.uz/"> <img class="hero__muslimat" src="./img/muslimat.png" alt="sdnls">
+                         <p class="hero__test" id="muslimat">Musimaat.uz</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__oila" src="./img/oila marlket.png" alt="sndl">
+                         <p class="hero__test" id="oila">Oila market</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://vitainfo.uz/ru/"> <img class="hero__vitainfo" src="./img/vitainfo.png" alt="vitainfo">
+                         <p class="hero__test" id="vitainfo">Vitainfo.uz</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://ipuedu.uz/uz/"> <img class="hero__iqtisodiyot" src="./img/iqtisodiyot.png" alt="iqtisodiyot">
+                         <p class="hero__test" id="iqtisodiyot">Iqtisodiyot uneversiteti</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__tibomet" src="./img/tibomet.png" alt="tibomet">
+                         <p class="hero__test" id="tibomet">TIBOMET QORA SEDANA YOG'I</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://niuedu.uz/"> <img class="hero__navoiy" src="./img/navoiy.png" alt="navoiy">
+                         <p class="hero__test" id="navoiy">Navoiy innavatsiyalar Institti</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__uzs" src="./img/uzscool.png" alt="uzs">
+                         <p class="hero__test" id="uzs">Uzscool Education</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://t.me/Inonuz_bot"> <img class="hero__inon" src="./img/inon.png" alt="inon">
+                         <p class="hero__test" id="inon">inon.uz</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__evr" src="./img/EVR.png" alt="evr">
+                         <p class="hero__test" id="evg">EVR consulting</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__xandoq" src="./img/handoq.png" alt="xandoq">
+                         <p class="hero__test" id="xandaq">Xandaq Treval</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://premierhotel.uz/uz"> <img class="hero__primear" src="./img/premier.png" alt="primear">
+                         <p class="hero__test" id="premiar">Premier hotel</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://oxusuniversity.uz/"> <img class="hero__oxus" src="./img/oxus.png" alt="oxus">
+                         <p class="hero__test" id="oxus">Oxus Universiteti</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="#"> <img class="hero__salam" src="./img/salam.png" alt="salam">
+                         <p class="hero__test" id="salam">Salam Treval</p></a>
+                     </li>
+                     <li data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500" class="hero__item">
+                        <a class="hero__link" href="https://miramandirestaurant.uz/ru/"> <img class="hero__miramandi" src="./img/mirama.png" alt="mirama">
+                         <p class="hero__test" id="miraman">Miramandi restaurand</p></a>
+                     </li>
+                </ul>
             </div>
         </div>
-      </div>
-      <!-- ----------------------------------continue-------------------------- -->
-      <div class="continue">
-        <div class="container continue__container">
-            <h1 class="continue__title">
-                Bizning professional jamoamizni tanlab, vaqt va pulingizni tejang.
-            </h1>
-            <ul class="continue__list">
-                <li class="continue__item">
-                     <img class="continue__img" src="./img/odam1.png" alt="sjkadk">
-                     <h3 class="continue__title__name">Ismoiljon Madgaziyev</h3>
-                     <p class="continue__text">FULL STACK</p>
-                     <p class="continue__text__name"> 10 yillik tajribaga ega Full stack web darturchi va grafik dizayner</p>
-                </li>
-                <li class="continue__item">
-                    <img class="continue__img" src="./img/odam2.jpeg" alt="saknd"> 
-                    <h3 class="continue__title__name">Axmadjod Madgaziyev</h3>
-                     <p class="continue__text">FULL STACK</p>
-                     <p class="continue__text__name">5 yillik tajribaga ega Full stack web darturchi va grafik dizayner</p>
-                </li>
-                <li class="continue__item">
-                    <img class="continue__img" src="./img/odam3.jpeg" alt="kawjbdlw">
-                    <h3 class="continue__title__name">Islombek Komilov</h3>
-                     <p class="continue__text">FULL STACK</p>
-                     <p class="continue__text__name">1 yillik tajribaga ega Full stack web darturchi </p>
+        <!-- -----------------------------main----------------------- -->
+        <div class="main">
+            <div id="proektlari" class="container main__container">
+                <p data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" class="main__text" id="proekt">PROECTLARIMIZ </p>
+                <h1 data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" class="main__title" id="ishlar">Qilgan ishlarimiz</h1>
+                <ul  data-aos="flip-left" class="main__list">
+                    <li  class="main__item">
+                       <p class="main__text" id="filter" >FILTER:</p>
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__link" id="all">ALL</a>
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__link" id="websayt">WEB SAYT </a>
+                        <img src="" alt="">
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__link" id="telegram">TELEGRAM BOT</a>
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__link" id="mobil">MOBIL ILOVALAR</a>
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__link" id="decktop">DESCTOP ILOVALAR</a>
+                    </li>
+                    <li class="main__item">
+                        <a href="#" class="main__link" id="grafik">GRAFIK DIZAYN</a>
+                    </li>
                     
-                </li>
-                <li class="continue__item">
-                    <img class="continue__img" src="./img/odam4.png" alt="wmndlk">
-                    <h3 class="continue__title__name">Ulug'bek Madgaziyev</h3>
-                     <p class="continue__text">GRAFIK DIZAYNER</p>
-                     <p class="continue__text__name">2 yillik tajribaga ega  grafik dizayner</p>
-                </li>
-                <img class="continue__imgpushti" src="" alt="">
-                <img class="continue__imgsariq" src="" alt="">
-            </ul>
-        </div>
-      </div>
-      <!-- ------------------------------ending------------------------- -->
-      <div class="ending">
-        <div class="container ending__container">
-            <a href="https://www.google.com/maps/place/Started+-+Learning+centre/@40.7947049,72.3467945,21z/data=!4m6!3m5!1s0x38bceb947feba959:0x1e4b7897e4c7b1b4!8m2!3d40.7946509!4d72.3465979!16s%2Fg%2F11rsqb8b8s?entry=ttu" class="ending__link">
-                <img class="ending__img" src="./img/manzil.jpg" alt="asdjk">
-            </a>
-            <div class="ending__wrapper">
-                <h1 class="ending__title">Biz bilan bog'lanish</h1>
-                <h2 class="ending__title__name">Manzil</h2>
-            <a href="https://www.google.com/maps/place/Started+-+Learning+centre/@40.7947049,72.3467945,21z/data=!4m6!3m5!1s0x38bceb947feba959:0x1e4b7897e4c7b1b4!8m2!3d40.7946509!4d72.3465979!16s%2Fg%2F11rsqb8b8s?entry=ttu" class="ending__link__name">
-                <p class="ending__text">Andijon, Cho'lpon shox ko'chasi 34-uy, Yoshlar markazi va 15-maktab yonida</p>
-            </a>
-                 <h2 class="ending__title__name">Telefon</h2>
-             <a href="#" class="ending__link__name">
-                <p class="ending__text">998 (93) 446 46 99</p>
-            </a>   
-                <h2 class="ending__title__name">E-mail</h2>
-            <a href="#" class="ending__link__name">
-                <p class="ending__text">ahmadjonmadgaziyev3@gmail.com</p>
-            </a>
+    
+                </ul>
+                <ul class="main__list__name">
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/1.png" alt="edf" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/2.png" alt="df" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/3.png" alt="sd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/4.png" alt="sd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/5.png" alt="sd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/6.png" alt="asd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/7.png" alt="asd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/8.png" alt="asd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/9.png" alt="s" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/10.png" alt="sd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/11.png" alt="qsd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/12.png" alt="sd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/13.png" alt="qwsd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/14.png" alt="qwd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/15.png" alt="asd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/16.png" alt="qswd" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/17.jpeg" alt="qsdqas" class="main__img">
+                    </li>
+                    <li data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0" class="main__item__name">
+                        <img src="./img/18.png" alt="qsd" class="main__img">
+                    </li>
+                </ul>
             </div>
         </div>
-      </div>
-      <!-- -------------------------------final--------------------- -->
-      <div class="final">
-        <div class="container final__container">
-           <h1 class="final__title">Bizga ma'lumotingizni qoldiring</h1>
-           <p class="final__text">Bizning xodimlar  tez orada siz bilan bog'lanishadi</p>
-           <form class="final__form" id="finalform">
-            <div class="final__box">
-                  <input class="final__input" type="text" id="ism" placeholder="Ismingiz*">
-                  <input class="final__input" type="text" id="familiya" placeholder="Familiangiz*">
-            </div>
-            <div class="final__box">
-                <input class="final__input" type="number" id="telefon" placeholder="Telefon raqamingiz*">
-                <select class="select"  id="select">
-                    <option class="option" >Bo'limni tanlang</option>
-                    <option class="option" >Web sayt</option>
-                    <option class="option" >Telagram bot</option>
-                    <option class="option" >Mobil ilovalar</option>
-                    <option class="option" >Desctop ilovalar</option>
-                    <option class="option" >Grafik dizayn</option>
-                </select>
-          </div>
-          <div class="final__inside">
-          <input class="final__input__name" type="text" id="fikr" placeholder="Sizga qanday xizmat kerakligi haqida qisqacha yozing.*">
-          <button class="final__btn" id="finalbtn">Qoldirish</button>
-        </div>  
-        </form>
-        </div>
-      </div>
-      <!-- ---------------------------footer----------------- -->
-      <div class="footer">
-        <div class="container footer__container">
-            <ul class="footer__list">
-                <li class="footer__item__name">
-                    <div>
-                    <p class="footer__text">© 2022 Startapp.uz.</p> 
-                    <p class="footer__text">Barcha huquqlar himoyalangan.</p>
-                    <!-- <div class="footer__box">
-                        <i class="fab fa-whatsapp-square"></i>
-                        <img src="" alt="" class="footer__twitter">
-                    </div> -->
+    
+        <!-- ----------------------------------------pricing--------------------------- -->
+          <div class="pricing">
+            <div  id="xizmatlari" class="container pricing__container">
+                <h1 class="pricing__title" id="xil">5-xil</h1>
+                <p class="pricing__text" id="tur">Turdagi xizmat turlarimiz mavjud bular:</p>
+                <div data-aos="zoom-out-right" class="pricing__box">
+                    <img src="./img/box1.png" alt="jdsfjkds" class="pricing__imgone">
+                    <img src="./img/box2.png" alt="nd " class="pricing__imgtoo">
+                    <div class="pricing__inside">
+                        <h2 class="pricing__title__name" id="WEB">Websaytlar</h2>
+                        <div class="inside__boxone">
+                            <p class="inside__text" id="marketing">Landing page marketing va boshqa maqsadlar uchun</p>
+                            <p class="inside__text" id="platforma">Ta'lim platformalari to'lov tizimlarini o'z ichiga olgan ta'lim platformasi</p>
+                        </div>
+                        <div class="inside__boxtoo">
+                            <p class="inside__text" id="internet" >internet magazinlar + to'lov tizimlar</p>
+                            <p class="inside__text" id="crm">Web dasturlar, CRM, LMS tizimlar</p>
+                        </div>
+                       <a href="#proektlar">
+                        <button class="pricing__btnone" id="bosing">Ko'rish uchun bosing</button>
+                       </a>
+                    </div>
                 </div>
-                </li>
-                <li class="footer__item">
-                    <h2 class="footer__title">Biz bilan bog'lanish</h2>
-                    <p class="footer__text__name">Manzil: Andijon, Cho'lpon shox ko'chasi 34-uy</p>
-                    <p class="footer__text__name">Mo'ljal: Yoshlar markazi va 15-maktab yonida</p>
-                    <a href="#" class="footer__link">ahmadjonmadaziyev3@gmail.com</a>
-                    <p class="footer__text">+998(93) 446-46-99</p>
-                </li>
-                <li class="footer__itemone">
-                    <h2 class="footer__title">Sahifalar </h2>
-                    <a href="#" class="footer__link">Biz haqimizda</a> <br>
-                    <a href="#" class="footer__link">Xizmatlar</a> <br>
-                    <a href="#" class="footer__link">Mijozlar</a>
-                    <a href="#" class="footer__link">Proektlar</a>
-                    <a href="#" class="footer__link">Jamoa</a>
-                    <a href="#" class="footer__link">Aloqa</a>
-                </li>
-                <li class="footer__item">
-                    <h2 class="footer__title">Ma'lumot qoldirish</h2>
-                    <p class="footer__text">Telefon raqamingizni qoldiring tez orada aloqaga chiqamiz</p>
-                </li>
-            </ul>
-        </div>
-      </div>
+                <div  data-aos="zoom-out-left"  class="pricing__box">
+                    <img src="./img/box3.png" alt="jdsfjkds" class="pricing__imgone">
+                    <img src="./img/box4.jpeg" alt="nd " class="pricing__imgtoo">
+                    <div class="pricing__inside">
+                        <h2 class="pricing__title__name" id="ilova">Mobile ilovalar</h2>
+                        <div class="inside__boxone">
+                            <p class="inside__text" id="android">Android</p>
+                            <p class="inside__text" id="los">los</p>
+                        </div>
+                    <a href="#proektlari">    <button class="pricing__btntoo" id="bosing4">Ko'rish uchun bosing</button></a>
+                    </div>
+                </div>
+                <div data-aos="zoom-out-right" class="pricing__box">
+                    <img src="./img/box5.jpeg" alt="jdsfjkds" class="pricing__imgone">
+                    <img src="./img/box6.jpeg" alt="nd " class="pricing__imgtoo">
+                    <div class="pricing__inside">
+                        <h2 class="pricing__title__name" id="ilovalar">Decktop ilovalar</h2>
+                        <div class="inside__boxone">
+                            <p class="inside__text" id="windows">windows</p>
+                            <p class="inside__text" id="mac">MacOs</p>
+                        </div>
+                        <div class="inside__boxtoo">
+                            <p class="inside__text" id="linux">Linux</p>
+                             </div>
+                       <a href="#proektlari"> <button class="pricing__btnthree" id="bosing1">Ko'rish uchun bosing</button></a>
+                    </div>
+                </div>
+                <div data-aos="zoom-out-right" class="pricing__box">
+                    <img src="./img/box7.jpeg" alt="jdsfjkds" class="pricing__imgone">
+                    <img src="./img/box8.jpeg" alt="nd " class="pricing__imgtoo">
+                    <div class="pricing__inside">
+                        <h2 class="pricing__title__name" id="bot">Telegram botlar</h2>
+                        <div class="inside__boxone">
+                            <p class="inside__text" id="tolov">To'lov tizimlarini o'z ichiga olgan botlar</p>
+                            <p class="inside__text" id="murakkab">Barcha murakkablikdagi botlar</p>
+                        </div>
+                        <div class="inside__boxtoo">
+                            <p class="inside__text" id="dostavka">Dostavka va turli loyihalar uchun botlar</p>
+                            <p class="inside__text" id="integr">Saytni botga intergratsiya qilish</p>
+                        </div>
+                        <a href="#proectlari"><button class="pricing__btnfour" id="bosing2">Ko'rish uchun bosing</button></a>
+                    </div>
+                </div>
+                <div data-aos="zoom-out-right" class="pricing__box">
+                    <img src="./img/box9.jpeg" alt="jdsfjkds" class="pricing__imgone">
+                    <img src="./img/box10.jpeg" alt="nd " class="pricing__imgtoo">
+                    <div class="pricing__inside">
+                        <h2 class="pricing__title__name" id="dizayn">Grafik dizayn</h2>
+                        <div class="inside__boxone">
+                            <p class="inside__text" id="smm">SMM postlar</p>
+                            <p class="inside__text" id="logotip">Brending & Logotip</p>
+                        </div>
+                        <div class="inside__boxtoo">
+                            <p class="inside__text" id="youtube">Youtube video bannerlar</p>
+                            <p class="inside__text" id="reklama">Reklama bannerlari</p>
+                        </div>
+                       <a href="#proectlari"> <button class="pricing__btnfive" id="bosing3">Ko'rish uchun bosing</button></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- ----------------------------------column------------------------ -->
+          <div class="column">
+            <div class="container column__container">
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" src="./img/telefon.png" alt="sajdkbsj" class="column__img">
+                <div data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500" class="column__box">
+                    <p class="column__text" id="responsive">RESPONSIVE</p>
+                    <h1 class="column__title" id="olcham">Har qanday ekran o'lchamiga mos keluvchi web dasturlar</h1>
+                    <p class="column__text__name" id="start">Startapp sizning web saytingiz yoki mobil ilovangiz barcha qurilmalar birdek ishlashini taminlaydi</p>
+                    <img class="column__img__name" src="./img/qrcod.jpg" alt="jdfnk">
+                </div>
+            </div>
+          </div>
+          <!-- ----------------------------------continue-------------------------- -->
+          <div id="jamoalari" class="continue">
+            <div  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" class="container continue__container">
+                <h1 class="continue__title" id="vaqt">
+                    Bizning professional jamoamizni tanlab, vaqt va pulingizni tejang.
+                </h1>
+                <ul class="continue__list">
+                    <li class="continue__item">
+                         <img class="continue__img" src="./img/odam1.png" alt="sjkadk">
+                         <h3 class="continue__title__name" id="ismoil">Ismoiljon Madgaziyev</h3>
+                         <p class="continue__text" id="full">FULL STACK</p>
+                         <p class="continue__text__name" id="onyil"> 10 yillik tajribaga ega Full stack web darturchi va grafik dizayner</p>
+                    </li>
+                    <li class="continue__item">
+                        <img class="continue__img" src="./img/odam2.jpeg" alt="saknd"> 
+                        <h3 class="continue__title__name" id="axmadjon">Axmadjod Madgaziyev</h3>
+                         <p class="continue__text" id="full">FULL STACK</p>
+                         <p class="continue__text__name" id="beshyil">5 yillik tajribaga ega Full stack web darturchi va grafik dizayner</p>
+                    </li>
+                    <li class="continue__item">
+                        <img class="continue__img" src="./img/odam3.jpeg" alt="kawjbdlw">
+                        <h3 class="continue__title__name" id="islombek">Islombek Komilov</h3>
+                         <p class="continue__text" id="full">FULL STACK</p>
+                         <p class="continue__text__name" id="biryil">1 yillik tajribaga ega Full stack web darturchi </p>
+                        
+                    </li>
+                    <li class="continue__item">
+                        <img class="continue__img" src="./img/odam4.png" alt="wmndlk">
+                        <h3 class="continue__title__name" id="ulugbek">Ulug'bek Madgaziyev</h3>
+                         <p class="continue__text"  id="dizayner">GRAFIK DIZAYNER</p>
+                         <p class="continue__text__name" id="ikkiyil">2 yillik tajribaga ega  grafik dizayner</p>
+                    </li>
+                    <img class="continue__imgpushti" src="" alt="">
+                    <img class="continue__imgsariq" src="" alt="">
+                </ul>
+            </div>
+          </div>
+          <!-- ------------------------------ending------------------------- -->
+          <div id="aloqalari" class="ending">
+            <div class="container ending__container" id="boglanish">
+                <a data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" href="https://www.google.com/maps/place/Started+-+Learning+centre/@40.7947049,72.3467945,21z/data=!4m6!3m5!1s0x38bceb947feba959:0x1e4b7897e4c7b1b4!8m2!3d40.7946509!4d72.3465979!16s%2Fg%2F11rsqb8b8s?entry=ttu" class="ending__link">
+                    <img class="ending__img" src="./img/manzil.jpg" alt="asdjk">
+                </a>
+                <!-- <iframe id="map"
+            width="300"
+            height="300"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/place/Started+-+Learning+centre/@40.7947049,72.3467945,21z/data=!4m6!3m5!1s0x38bceb947feba959:0x1e4b7897e4c7b1b4!8m2!3d40.7946509!4d72.3465979!16s%2Fg%2F11rsqb8b8s?entry=ttu"
+            allowfullscreen=""></iframe> -->
+                <div data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="300"
+                data-aos-duration="500" class="ending__wrapper">
+                    <h1 class="ending__title" id="boglanish">Biz bilan bog'lanish</h1>
+                    <h2 class="ending__title__name" id="manzil">Manzil</h2>
+                <a href="https://www.google.com/maps/place/Started+-+Learning+centre/@40.7947049,72.3467945,21z/data=!4m6!3m5!1s0x38bceb947feba959:0x1e4b7897e4c7b1b4!8m2!3d40.7946509!4d72.3465979!16s%2Fg%2F11rsqb8b8s?entry=ttu" class="ending__link__name">
+                    <p class="ending__text" id="andijon">Andijon, Cho'lpon shox ko'chasi 34-uy, Yoshlar markazi va 15-maktab yonida</p>
+                </a>
+                     <h2 class="ending__title__name" id="telefon">Telefon</h2>
+                 <a href="#" class="ending__link__name">
+                    <p class="ending__text">998 (93) 446 46 99</p>
+                </a>   
+                    <h2 class="ending__title__name" id="email">E-mail</h2>
+                <a href="#" class="ending__link__name">
+                    <p class="ending__text" id="axmad">ahmadjonmadgaziyev3@gmail.com</p>
+                </a>
+                </div>
+            </div>
+          </div>
+          <!-- -------------------------------final--------------------- -->
+          <div class="final">
+            <div class="container final__container">
+               <h1 class="final__title" id="malumot">Bizga ma'lumotingizni qoldiring</h1>
+               <p class="final__text" id="xodimlar">Bizning xodimlar  tez orada siz bilan bog'lanishadi</p>
+               <form class="final__form" id="finalform">
+                <div class="final__box">
+                      <input class="final__input" type="text" id="ismingiz" placeholder="Ismingiz*">
+                      <input class="final__input" type="text" id="familiyangiz" placeholder="Familiyangiz*">
+                </div>
+                <div class="final__box">
+                    <input class="final__input" type="number" id="telefone" placeholder="Telefon raqamingiz*">
+                    <select class="select"  id="select">
+                        <option class="option" id="option1">Bo'limni tanlang</option>
+                        <option class="option" id="option2">Web sayt</option>
+                        <option class="option" id="option3">Telagram bot</option>
+                        <option class="option" id="option4">Mobil ilovalar</option>
+                        <option class="option" id="option5">Desctop ilovalar</option>
+                        <option class="option" id="option5">Grafik dizayn</option>
+                    </select>
+              </div>
+              <div class="final__inside">
+              <input class="final__input__name" type="text" id="fikr" placeholder="Sizga qanday xizmat kerakligi haqida qisqacha yozing.*">
+              <button class="final__btn" id="qoldirish">Qoldirish</button>
+            </div>  
+            </form>
+            </div>
+          </div>
+          <!-- ---------------------------footer----------------- -->
+          <div class="footer">
+            <div class="container footer__container">
+                <ul class="footer__list">
+                    <li data-aos="fade-up-right" class="footer__item__name">
+                        <div>
+                        <p class="footer__text" >© 2022 Startapp.uz.</p> 
+                        <p class="footer__text" id="huquq">Barcha huquqlar himoyalangan.</p>
+                        <!-- <div class="footer__box">
+                            <i class="fab fa-whatsapp-square"></i>
+                            <img src="" alt="" class="footer__twitter">
+                        </div> -->
+                    </div>
+                    </li>
+                    <li data-aos="fade-up-right" class="footer__item">
+                        <h2 class="footer__title" id="bizbilan">Biz bilan bog'lanish</h2>
+                        <p class="footer__text__name" id="cholpon">Manzil: Andijon, Cho'lpon shox ko'chasi 34-uy</p>
+                        <p class="footer__text__name" id="yoshlar">Mo'ljal: Yoshlar markazi va 15-maktab yonida</p>
+                        <a href="#" class="footer__link" id="gmail">ahmadjonmadaziyev3@gmail.com</a>
+                        <p class="footer__text">+998(93) 446-46-99</p>
+                    </li>
+                    <li data-aos="fade-up-left" class="footer__itemone">
+                        <h2 class="footer__title" id="sax">Sahifalar </h2>
+                        <a href="#" class="footer__link" id="bizhaq">Biz haqimizda</a> <br>
+                        <a href="#" class="footer__link" id="xizma">Xizmatlar</a> <br>
+                        <a href="#" class="footer__link" id="mij">Mijozlar</a>
+                        <a href="#" class="footer__link" id="pro">Proektlar</a>
+                        <a href="#" class="footer__link" id="jamo">Jamoa</a>
+                        <a href="#" class="footer__link" id="alo">Aloqa</a>
+                    </li>
+                    <li data-aos="fade-up-left" class="footer__item">
+                        <h2 class="footer__title" id="qol">Ma'lumot qoldirish</h2>
+                        <p class="footer__text" id="tel">Telefon raqamingizni qoldiring tez orada aloqaga chiqamiz</p>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </div>
 
       <script src="./main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>
